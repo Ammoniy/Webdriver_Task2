@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webdriver_Task2", "Webdriver_Task2\Webdriver_Task2.csproj", "{7A703084-C0A0-43FE-9A3F-3DC8FC9E4092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pasteabin", "Pasteabin\Pasteabin.csproj", "{46E61EDD-B2B7-4D6C-AD8D-300551936702}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A703084-C0A0-43FE-9A3F-3DC8FC9E4092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A703084-C0A0-43FE-9A3F-3DC8FC9E4092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A703084-C0A0-43FE-9A3F-3DC8FC9E4092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A703084-C0A0-43FE-9A3F-3DC8FC9E4092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E61EDD-B2B7-4D6C-AD8D-300551936702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E61EDD-B2B7-4D6C-AD8D-300551936702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E61EDD-B2B7-4D6C-AD8D-300551936702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E61EDD-B2B7-4D6C-AD8D-300551936702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {675BF41E-2611-48C2-8E02-E866F6BCE3ED}
+	EndGlobalSection
+EndGlobal
