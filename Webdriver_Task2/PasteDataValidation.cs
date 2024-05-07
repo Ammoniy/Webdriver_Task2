@@ -24,20 +24,20 @@ git push origin master --force";
         public void Setup()
         {
             driver = new ChromeDriver();
-
-        }
-
-        [Test]
-        public void Paste_Creation_Validate_Title_Test()
-        {
             HomePage hp = new HomePage(driver);
             driver.Url = "https://pastebin.com";
             hp.Paste(paste_text: paste,
             format_text: format,
             exp_text: expiration,
             title_text: title);
-
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        }
+
+        
+
+        [Test]
+        public void Paste_Creation_Validate_Title_Test()
+        {
             string actualPaste = driver.FindElement(By.ClassName("info-top")).Text;
             Assert.AreEqual(title, actualPaste);
         }
@@ -45,14 +45,6 @@ git push origin master --force";
         [Test]
         public void Paste_Creation_Validate_Paste_Test()
         {
-            HomePage hp = new HomePage(driver);
-            driver.Url = "https://pastebin.com";
-            hp.Paste(paste_text: paste,
-            format_text: format,
-            exp_text: expiration,
-            title_text: title);
-
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             string actualPaste = driver.FindElement(By.ClassName("bash")).Text;
             Assert.AreEqual(paste, actualPaste);
         }
@@ -60,16 +52,15 @@ git push origin master --force";
         [Test]
         public void Paste_Creation_Validate_Format_Test()
         {
-            HomePage hp = new HomePage(driver);
-            driver.Url = "https://pastebin.com";
-            hp.Paste(paste_text: paste,
-            format_text: format,
-            exp_text: expiration,
-            title_text: title);
-
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             string actualPaste = driver.FindElement(By.ClassName("left")).Text;
             Assert.IsTrue(actualPaste.Contains(format));
-       }
+        }
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
     }
 }
